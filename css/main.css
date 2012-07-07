@@ -79,7 +79,6 @@ a:hover {
 }
 
 aside #feature_list {
-	background: #030e3c;
 	margin: 0px;
 	padding: 0px;
 }
@@ -87,7 +86,8 @@ aside #feature_list {
 #feature_list ul {
 	margin: 0px;
 	padding: 0px;
-	width: 850px;
+	background: #b0f3f5;
+	width: 1090px;
 	float: left;
 }
 
@@ -96,28 +96,34 @@ aside #feature_list {
 }
 
 #bird {
-	padding: 20px;
+	padding: 40px;
 }
 
 #la {
-	padding: 20 20;
+	padding: 65px;
 }
 
-#food ul {
-	margin: 0px;
-	padding: 0px;
-	width: 350px;
-}
-
-#food ul li {
-	float: left;
+aside #gallery img {
+	margin: 10px;
 	padding: 10px;
+	width: 450px;
+}
+
+#arrangement {
+	margin-right: 50px;
+	float: left;
+}
+
+#gumbo {
+	margin-right: 50px;
+	float: left;
 }
 
 /************************************************* Main body section *********************************************************/
 
 #mainSection {
 	clear: both;
+	padding: 5px 0px;
 }
 
 .paraFloat {
@@ -137,6 +143,33 @@ aside #feature_list {
 	clear: left;
 }
 
+/************************************************ Div for table and form *****************************************************/
+
+div {
+	width: 1090px;
+	height: 600px;
+	margin: 0px;
+	padding: 0px;
+	background: #b0f3f5;
+}
+
+/************************************************ Footer section *************************************************************/
+
+footer {
+	background: #030e3c;
+	color: #b0f3f5;
+}
+
+#author {
+	margin-left: 10px;
+	padding: 5px;
+}
+
+#copy {
+	float: right;
+	margin-top: -35px;
+	padding: 0 15px 0 0;
+}
 
 
 
