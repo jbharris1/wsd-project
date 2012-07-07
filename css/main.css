@@ -1,0 +1,173 @@
+/*****************************************Color Coding**************************************************************************
+**************** Feature Color - 030e3c ***************************************************************************************
+**************** H1-H6 Color - 7991f9   ***************************************************************************************
+**************** Link Active - 0b8bf7   ***************************************************************************************
+**************** Link Hover - 0c2a43    ***************************************************************************************
+**************** Link Visited - Also making it underlined with the underline color 4f606e  ************************************
+**************** Link Hover Text Color: e8eef4  *******************************************************************************
+**************** Link Active Text Color: 193d5c *******************************************************************************
+********************************************************************************************************************************/
+
+/*********************************************** Font Styles and colors *******************************************************/
+
+@font-face {
+	font-family: SuillylaTourDemo;
+	src: url("../fonts/SuillylaTourDemo.ttf");
+}
+
+h1 {
+	font: 4em SuillylaTourDemo;
+	color: #193d5c;
+	margin: 0px;
+	padding: 0px;
+	width: 350px;
+	float: left;
+	overflow: hidden;
+}
+
+h2,h3,h4,h5,h6 {
+	margin: 0px;
+	background: #030e3c;
+	color: #7991f9;
+	font: 2em SuillylaTourDemo;
+	padding: 10px;
+	
+}
+
+/*********************************************** Body Styles and declarations *************************************************/
+
+body {
+	width: 1090px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	line-height: 1em;
+}
+
+/*********************************************** Link Coloring and Styles ****************************************************/
+
+li {
+	list-style-type: none;
+}
+
+nav ul {
+	float: right;
+	margin: 18 100 0 auto;
+	padding: 0px;
+	width: 350px;
+}
+
+nav ul li {
+	float: left;
+	display: inline-block;
+	width: 100px;
+}
+
+a {
+	font: 2em SuillylaTourDemo;
+	color: #193d5c;
+	text-decoration: none;
+	padding: 0px;
+}
+
+a:active {
+	background-color: #0b8bf7;
+}
+
+a:hover {
+	background-color: #0c2a43;
+	color: #e8eef4; 
+}
+
+aside #feature_list {
+	background: #030e3c;
+	margin: 0px;
+	padding: 0px;
+}
+
+#feature_list ul {
+	margin: 0px;
+	padding: 0px;
+	width: 850px;
+	float: left;
+}
+
+#feature_list ul li {
+	float: left;
+}
+
+#bird {
+	padding: 20px;
+}
+
+#la {
+	padding: 20 20;
+}
+
+#food ul {
+	margin: 0px;
+	padding: 0px;
+	width: 350px;
+}
+
+#food ul li {
+	float: left;
+	padding: 10px;
+}
+
+/************************************************* Main body section *********************************************************/
+
+#mainSection {
+	clear: both;
+}
+
+.paraFloat {
+	margin: 0;
+	padding: 10px;
+	width: 325px;
+	float: left;
+}
+
+#hospitality {
+	clear: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+#music {
+	clear: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
