@@ -23,7 +23,7 @@ h1 {
 	color: #193d5c;
 	margin: 0px;
 	padding: 0px;
-	width: 350px;
+	width: 32.1100917431193%; /*350px*/
 	float: left;
 	overflow: hidden;
 }
@@ -37,11 +37,15 @@ h2,h3,h4,h5,h6 {
 	
 }
 
+p {
+	font-size: 0.8125em; /* 16px */
+}
+
 /*********************************************** Body Styles and declarations *************************************************/
 
 body {
 	width: 1090px;
-	margin: 0 auto 0 auto;
+	margin: 0px auto 0px auto;
 	padding: 0;
 	line-height: 1em;
 }
@@ -55,16 +59,16 @@ li {
 nav ul {
 	display: inline-block;
 	float: right;
-	margin: 18px;
+	margin: 18px auto 0px auto;
 	padding: 0px;
-	width: 560px;
+	width: 51.3761467889908%; /*560px*/
 }
 
 nav ul li {
 	float: left;
 	padding: .75px;
 	margin: 0px;
-	width: 110px;
+	width: 18.6440677966102%; /*110px*/
 }
 
 a {
@@ -92,7 +96,7 @@ aside #feature_list {
 	margin: 0px;
 	padding: 0px;
 	background: #b0f3f5;
-	width: 1090px;
+	width: 100%; /*1090px*/
 	float: left;
 }
 
@@ -111,7 +115,7 @@ aside #feature_list {
 aside #gallery img {
 	margin: 10px;
 	padding: 20px;
-	width: 450px;
+	width: 41.2844036697248%; /*450px*/
 }
 
 #arrangement {
@@ -144,7 +148,12 @@ aside #gallery img {
 	background: -webkit-linear-gradient(#0CF, #06C, #0CF);
 }
 
+#food-list ul {
+	font-size: 0.8125em; /* 16px */
+}
+
 #food-list li{
+	font-size: 0.8125em; /* 16px */
 	list-style-type: circle;
 }
 
@@ -158,7 +167,7 @@ aside #gallery img {
 .paraFloat {
 	margin: 0;
 	padding: 10px 35px 5px 0px;
-	width: 325px;
+	width: 29.8165137614679%; /*325px*/
 	float: left;
 }
 
@@ -180,7 +189,7 @@ aside #gallery img {
 /************************************************ Div for table and form *****************************************************/
 
 div {
-	width: 1090px;
+	width: 100%; /*1090px*/
 	height: 600px;
 	margin: 0px;
 	padding: 10px;
@@ -204,6 +213,296 @@ footer {
 	margin-top: -35px;
 	padding: 0 15px 0 0;
 }
+
+/******************************************* Media Queries *******************************************************************************************/
+
+/***** Tablet size portrait to standard 960 (devices and browsers) **************/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	body {
+		width: 768px;
+	}
+	
+	nav ul {
+		display: inline-block;
+		float: right;
+		margin: 2.34375% auto 0px auto; 
+		width: 60%; 
+	}
+
+	nav ul li {
+		float: left;
+		margin: 0px;
+		width: 18.6440677966102%; 
+	}
+	
+	#feature_list ul {
+		margin: 0px;
+		padding: 0px;
+		background: #b0f3f5;
+		width: 100%;
+		float: left;
+	}
+
+	#feature_list ul li {
+		width: 48%;
+		float: left;
+	}
+	
+#bird {
+	padding: 5.2083333333333%; 
+	width: 51.0416666666667%; 
+}
+
+#la {
+	padding: 8.4635416666667%; 
+	width: 52.0833333333333% 
+}
+
+	.button {
+	display: inline-block;
+	margin: 0.04166666666667% 50%; 
+	padding: 0.04166666666667% 0.125%; 
+	width: 80%; /*400px*/
+	-moz-border-radius: 0.016666666666667%; 
+	-webkit-border-radius: 0.016666666666667%; 
+	border-radius: 0.016666666666667%; /*8px*/
+	background: #09C;
+	color: #9CF;
+	font-family: LITTLELO;
+	text-decoration: none;
+	text-shadow: 0% 0.008333333333333% 0.004166666666667%; 
+	background: -moz-linear-gradient(#0CF, #06C, #0CF);
+	background: -webkit-linear-gradient(#0CF, #06C, #0CF);
+}
+
+	.paraFloat {
+	width: 85%;
+	-moz-column-count: 3;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 1em;
+	column-count: 3;
+	column-gap: 1em;
+}	
+
+	aside #gallery img {
+	margin: 1.3020833333333%; 
+	width: 41.2844036697248%; 
+}
+
+#arrangement {
+	margin-right: 1.3020833333333%; 
+	float: left;
+}
+
+#gumbo {
+	float: left;
+}
+
+}
+
+/***** Mobile landscape size to Tablet portrait (devices and browsers) **************/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+		width: 480px;
+	}
+	
+	h1 {
+	font: 4em SuillylaTourDemo;
+	text-shadow: 0px 2px 2px #0a2134;
+	color: #193d5c;
+	margin: 3.75%;
+	padding: 0px;
+	width: 32.1100917431193%; 
+	float: left;
+	overflow: hidden;
+}
+	
+	nav ul {
+		display: inline-block;
+		float: right;
+		margin: 2.34375% auto 0px auto; 
+		width: 90%; 
+	}
+
+	nav ul li {
+		float: left;
+		margin: 0px;
+		width: 18.6440677966102%; 
+	}
+	
+	#feature_list ul {
+	margin: 0px;
+	padding: 0px;
+	background: #b0f3f5;
+	width: 100%;
+	float: none;
+}
+
+#feature_list ul li {
+	float: none;
+}
+	
+	#la {
+		width: 83.3333333333333%; 
+	}
+	
+	#bird {
+		display: none;
+		
+	}
+	
+	.button {
+	display: inline-block;
+	margin: 0.04166666666667% 20%; 
+	padding: 0.04166666666667% 0.125%; 
+	width: 60%; /*400px*/
+	-moz-border-radius: 0.016666666666667%; 
+	-webkit-border-radius: 0.016666666666667%; 
+	border-radius: 0.016666666666667%; 
+	background: #09C;
+	color: #9CF;
+	font-family: LITTLELO;
+	text-decoration: none;
+	text-shadow: 0% 0.008333333333333% 0.004166666666667%; 
+	background: -moz-linear-gradient(#0CF, #06C, #0CF);
+	background: -webkit-linear-gradient(#0CF, #06C, #0CF);
+}
+
+.paraFloat {
+	float: none;
+	width: 62.5%;
+}
+
+#arrangement {
+	float: none;
+	padding: 2.0833333333333% 0% 2.0833333333333% 0%;
+}
+
+#gumbo {
+	padding: 2.0833333333333% 0% 2.0833333333333% 0%;
+}
+
+#shrimp {
+	padding: 2.0833333333333% 0% 2.0833333333333% 0%;
+}
+
+
+}
+
+/***** Mobile portrait size to Mobile landscape size (devices and browsers) **************/
+@media only screen and (max-width: 479px) {
+	body {
+		width: 480px;
+	}
+	
+	h1 {
+	font: 4em SuillylaTourDemo;
+	text-shadow: 0px 2px 2px #0a2134;
+	color: #193d5c;
+	margin: 3.75%;
+	padding: 0px;
+	width: 32.1100917431193%; 
+	float: left;
+	overflow: hidden;
+}
+	
+	nav ul {
+		display: inline-block;
+		float: right;
+		margin: 2.34375% auto 0px auto; 
+		width: 90%; 
+	}
+
+	nav ul li {
+		float: left;
+		margin: 0px;
+		width: 18.6440677966102%; 
+	}
+	
+	#feature_list ul {
+	margin: 0px;
+	padding: 0px;
+	background: #b0f3f5;
+	width: 100%;
+	float: none;
+}
+
+#feature_list ul li {
+	float: none;
+}
+	
+	#la {
+		width: 83.3333333333333%; 
+	}
+	
+	#bird {
+		display: none;
+		
+	}
+	
+	.button {
+	display: inline-block;
+	margin: 0.04166666666667% 20%; 
+	padding: 0.04166666666667% 0.125%; 
+	width: 60%; /*400px*/
+	-moz-border-radius: 0.016666666666667%; 
+	-webkit-border-radius: 0.016666666666667%; 
+	border-radius: 0.016666666666667%; /*8px*/
+	background: #09C;
+	color: #9CF;
+	font-family: LITTLELO;
+	text-decoration: none;
+	text-shadow: 0% 0.008333333333333% 0.004166666666667%; 
+	background: -moz-linear-gradient(#0CF, #06C, #0CF);
+	background: -webkit-linear-gradient(#0CF, #06C, #0CF);
+}
+
+.paraFloat {
+	float: none;
+	width: 70.5%;
+	padding: 2.5%;
+}
+
+#hosp_para {
+	width: 70.5%;
+	padding: 2.5%;
+	}
+	
+.phone_style {
+	width: 70.5%;
+	padding: 2.5%;
+}
+
+#food_list {
+	padding: 2.5%;
+}
+
+#arrangement {
+	float: none;
+	padding: 2.5%;
+}
+
+#gumbo {
+	padding: 2.5%;
+}
+
+#shrimp {
+	padding: 2.5%;
+}
+
+#crawfish {
+	padding: 2.5%;
+}
+
+#singing {
+	padding: 2.5%;
+}
+
+
+}
+
+
 
 
 
