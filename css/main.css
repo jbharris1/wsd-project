@@ -28,15 +28,25 @@ h1 {
 	overflow: hidden;
 }
 
-h2,h3,h4,h5,h6 {
+h2,h3,h4,h5 {
 	margin: 0px;
 	background: #030e3c;
-	color: #7991f9;
+	background: -moz-linear-gradient(top, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(top, 2f2727, #1a82f7);
+	background: -o-linear-gradient(top, 2f2727, #1a82f7);
+	color: #d4e2f2;
 	font: 2em SuillylaTourDemo;
 	padding: 10px;
 	
 }
 
+h6 {
+	font: 1.5em normal LITTLELO, verdana, helvetica;
+	margin: 0px 0px 10px 500px;
+	padding: 0;
+	color: #91c1f7;
+	text-align: center;
+}
 p {
 	font-size: 0.8125em; /* 16px */
 }
@@ -66,7 +76,7 @@ nav ul {
 
 nav ul li {
 	float: left;
-	padding: .75px;
+	padding: 0;
 	margin: 0px;
 	width: 18.6440677966102%; /*110px*/
 }
@@ -80,10 +90,16 @@ a {
 
 a:active {
 	background-color: #0b8bf7;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 }
 
 a:hover {
 	background-color: #0c2a43;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 	color: #e8eef4; 
 }
 
@@ -96,6 +112,9 @@ aside #feature_list {
 	margin: 0px;
 	padding: 0px;
 	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 	width: 100%; /*1090px*/
 	float: left;
 }
@@ -190,16 +209,22 @@ aside #gallery img {
 
 div {
 	width: 100%; /*1090px*/
-	height: 600px;
+	height: 500px;
 	margin: 0px;
 	padding: 10px;
 	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 }
 
 /************************************************ Footer section *************************************************************/
 
 footer {
 	background: #030e3c;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 	color: #b0f3f5;
 }
 
@@ -213,6 +238,67 @@ footer {
 	margin-top: -35px;
 	padding: 0 15px 0 0;
 }
+
+/******************************************* Table Styles ********************************************************************************************/
+
+/* Clear factory defaults */
+
+table, thead, tbody, tr, td, th {
+		margin: 10px 30px;
+		padding: 0;
+	}
+	
+/* Resize table to fit division area and leave room for the form */
+
+table {
+		width: 300px;
+		float: left;
+	}
+	
+/* Give each element of the table some padding , a border, and adjust the line height to make for easier reading */
+
+thead td, tbody td, th {
+		padding: 10px;
+		border: 1px solid #039;
+		line-height: .95em;
+	}
+	
+/* Add font to incorporate a more personal touch */
+
+tbody td, th {
+		font-family: Metrophobic, helvetica, verdana;
+	}
+	
+/* Add color to the th tag for readability */
+
+th {
+	color: #fff;
+}
+/* Add a background color to the tbody and thead table data cells to further readability */
+
+tbody td:nth-child(odd) {
+		background: #09C;
+		color: #fff;
+	}
+	
+thead td, tbody td:nth-child(even) {
+		background: rgba(255, 255, 255, .25);
+	}
+	
+/******************************************* Form Styles are located here ****************************************************************************/
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input, textarea {display: block; margin: 0px 10px 20px 800px; background: rgba(255,255,255, .25); color: #092e58;}
+
+label {display: block; margin: 0px 0px 0px 200px; float: left; color: #91c1f7; background: rgba(146, 192, 244, .35); width: 200px; height: 20px;}
+
+.form-button {margin-left: 900px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 100px;}
+
+.form-button:hover { background: rgba(32, 48, 65, .30); color: #fff;}
 
 /******************************************* Media Queries *******************************************************************************************/
 
@@ -239,6 +325,9 @@ footer {
 		margin: 0px;
 		padding: 0px;
 		background: #b0f3f5;
+		background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+		background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+		background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 		width: 100%;
 		float: left;
 	}
@@ -299,6 +388,20 @@ footer {
 	float: left;
 }
 
+h6 {
+	font: 1.5em normal LITTLELO, verdana, helvetica;
+	margin: 0px 0px 10px 400px;
+	padding: 0;
+	color: #91c1f7;
+	text-align: center;
+}
+
+input, textarea {display: block; margin: 0px 10px 20px 500px; background: rgba(255,255,255, .25); color: #092e58;}
+
+label {display: block; margin: 0px 0px 0px 20px; float: left; color: #91c1f7; background: rgba(146, 192, 244, .35); width: 100px; height: 20px;}
+
+.form-button {margin-left: 630px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 100px;}
+
 }
 
 /***** Mobile landscape size to Tablet portrait (devices and browsers) **************/
@@ -335,6 +438,9 @@ footer {
 	margin: 0px;
 	padding: 0px;
 	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 	width: 100%;
 	float: none;
 }
@@ -387,6 +493,31 @@ footer {
 	padding: 2.0833333333333% 0% 2.0833333333333% 0%;
 }
 
+h6 {
+	font: 1.5em normal LITTLELO, verdana, helvetica;
+	margin: 0px;
+	padding: 0;
+	color: #91c1f7;
+	text-align: center;
+}
+
+input, textarea {display: block; margin: 30px; background: rgba(255,255,255, .25); color: #092e58;}
+
+label {display: block; margin: 0px 0px 0px 100px; float: left; color: #91c1f7; background: rgba(146, 192, 244, .35); width: 100px;}
+
+.form-button {-moz-border-radius: 10px; margin-left: 280px; -webkit-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 100px;}
+
+div {
+	width: 100%; /*1090px*/
+	margin: 0px;
+	padding: 10px;
+	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
+}
+
+table {display: none;}
 
 }
 
@@ -424,6 +555,9 @@ footer {
 	margin: 0px;
 	padding: 0px;
 	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
 	width: 100%;
 	float: none;
 }
@@ -499,6 +633,31 @@ footer {
 	padding: 2.5%;
 }
 
+h6 {
+	font: 1.5em normal LITTLELO, verdana, helvetica;
+	margin: 0px;
+	padding: 0;
+	color: #91c1f7;
+	text-align: center;
+}
+
+input, textarea {display: block; margin: 30px; background: rgba(255,255,255, .25); color: #092e58;}
+
+label {display: block; margin: 0px 0px 0px 100px; float: left; color: #91c1f7; background: rgba(146, 192, 244, .35); width: 100px;}
+
+.form-button {-moz-border-radius: 10px; margin-left: 280px; -webkit-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 100px;}
+
+div {
+	width: 100%; /*1090px*/
+	margin: 0px;
+	padding: 10px;
+	background: #b0f3f5;
+	background: -moz-linear-gradient(bottom, #2f2727, #1a82f7);
+	background: -webkit-linear-gradient(bottom, 2f2727, #1a82f7);
+	background: -o-linear-gradient(bottom, 2f2727, #1a82f7);
+}
+
+table {display: none;}
 
 }
 
